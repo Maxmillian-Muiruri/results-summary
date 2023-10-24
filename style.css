@@ -1,0 +1,135 @@
+
+body {
+ align-items: center;
+ display: flex ;
+ justify-content: center;
+ min-height: 100vh;
+ font-family: sans-serif;
+}
+.container {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 0px 20px 2px rgb(0, 0, 0, 0.4);
+
+}
+.left {
+    color: rgb(252, 214, 214);
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(hsl(252, 100%, 59%), hsl(241, 81%, 54%));
+}
+.right {
+    width: 50%;
+    padding: 20px;
+}
+.left h4 {
+    text-align: center;
+    color: rgb(252, 214, 214);
+
+}
+.score-left {
+    padding: 50px;
+    width: 74px;
+    height: 74px;
+    border-radius: 100%;
+    background-color: hsl(241, 81%, 54%);  
+    display: flex ;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto; 
+
+
+}
+.small-score { 
+font-weight: lighter;
+font-weight: 0;
+
+
+}
+.big-score {
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+}
+.left h3 {
+    text-align: center;
+}
+.score-con {
+    display: flex;
+}
+.score {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.grey {
+    font-style: italic;
+    font-weight: lighter;
+    opacity: 0.6;
+}
+.score-con img {
+    margin-right: 5px;
+}
+.black-text {
+    color: #222;
+    font-weight: bold;
+}
+.score-memory {
+    color: hsl(39, 100%, 56%);
+    background: hsla(39, 100%, 56%, 0.1);
+}
+.score-verbal {
+    color: hsl(166, 100%, 37%);
+    padding: 20px 10px;
+    border-radius: 20px;
+    background-color: hsla(166, 78%, 73%, 0.062);
+}
+
+.score-visual {
+    color: hsl(234, 85%, 45%);
+    background: hsl(234, 85%, 45%, 0.1);
+}
+
+button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    outline: none;
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    border-radius: 20px;
+}
+@media (max-width: 760px){
+    .left {
+        width: 100%;
+        padding: 0%;
+        border-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .right {
+        padding: 0%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .left-text{
+        padding: 20px;
+        text-align: center;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0px;
+        overflow: hidden;
+        padding: 0;
+    }
+}
