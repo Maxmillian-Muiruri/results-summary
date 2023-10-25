@@ -28,7 +28,7 @@ body {
 }
 .left h4 {
     text-align: center;
-    color: rgb(252, 214, 214);
+    color:var(--light-lavendar);
 
 }
 .score-left {
@@ -44,10 +44,10 @@ body {
 
 
 }
-.small-score { 
-font-weight: lighter;
-font-weight: 0;
-
+.small-score {
+    font-size: 15px;
+    color:var(--light-lavendar); 
+filter: blur(1px);
 
 }
 .big-score {
@@ -83,19 +83,23 @@ font-weight: 0;
     font-weight: bold;
 }
 .score-memory {
-    color: hsl(39, 100%, 56%);
-    background: hsla(39, 100%, 56%, 0.1);
-}
-.score-verbal {
-    color: hsl(166, 100%, 37%);
+    color:var(--Orangey-yellow);
+    background: hsla(39, 100%, 56%, 0.2);
     padding: 20px 10px;
     border-radius: 20px;
-    background-color: hsla(166, 78%, 73%, 0.062);
+}
+.score-verbal {
+    color: var(--green-teal);
+    padding: 20px 10px;
+    border-radius: 20px;
+    background-color: hsla(166, 100%, 37%,.2);
 }
 
 .score-visual {
-    color: hsl(234, 85%, 45%);
-    background: hsl(234, 85%, 45%, 0.1);
+    color: var(--cobalt-blue);
+    background: hsl(234, 85%, 45%, .2);
+    padding: 20px 10px;
+    border-radius: 20px;
 }
 
 button{
@@ -106,6 +110,8 @@ button{
     outline: none;
     background-color: hsl(224, 30%, 27%);
     width: 100%;
+    border-radius: 20px;
+    padding: 20px 10px;
     border-radius: 20px;
 }
 @media (max-width: 760px){
@@ -124,6 +130,7 @@ button{
     .left-text{
         padding: 20px;
         text-align: center;
+        color: grey;
     }
     .container{
         width: 100%;
